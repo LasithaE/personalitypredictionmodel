@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/input.css') }}">
+</head>
+
+<body>
+  <h1>Personality Prediction Test</h1>
+  <h2 class='desc'>Please fill the below test keeping in mind the following scale : 1=Disagree, 3=Neutral, 5=Agree .</h2>
+
+    <form method="POST" action="{{ url_for('test') }}">
+      <div class='heading' name='ext1'>1. I am the life of the party.<input class='slider' type="range" name=name_of_slider[0] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='ext2'>2. I don't talk a lot.<input class='slider'  type="range" name=name_of_slider[1] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='ext3'>3. I feel comfortable around people.<input class='slider'  type="range" name=name_of_slider[2] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='ext4'>4. I keep in the background.<input class='slider'  type="range" name=name_of_slider[3] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+
+      <div class='heading' name='est1'>5. I get stressed out easily.<input class='slider'  type="range" name=name_of_slider[4] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='est2'>6. I am relaxed most of the time.<input class='slider'  type="range" name=name_of_slider[5] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='est3'>7. I worry about things.<input  class='slider' type="range" name=name_of_slider[6] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='est4'>8. I seldom feel blue.<input class='slider'  type="range" name=name_of_slider[7] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+
+      <div class='heading' name='agr1'>9. I feel little concern for others.<input class='slider'  type="range" name=name_of_slider[8] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='agr2'>10. I am interested in people.<input class='slider'  type="range" name=name_of_slider[9] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='agr3'>11. I insult people.<input  class='slider' type="range" name=name_of_slider[10] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='agr4'>12. I sympathize with others' feelings.<input class='slider'  type="range" name=name_of_slider[11] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+
+      <div class='heading' name='csn1'>13. I am always prepared..<input class='slider'  type="range" name=name_of_slider[12] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='csn2'>14. I leave my belongings around.<input  class='slider' type="range" name=name_of_slider[13] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='csn3'>15. I pay attention to details.<input class='slider'  type="range" name=name_of_slider[14] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='csn4'>16. I make a mess of things.<input class='slider'  type="range" name=name_of_slider[15] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+
+      <div class='heading' name='opn1'>17. I have a rich vocabulary.<input  class='slider' type="range" name=name_of_slider[16] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='opn2'>18. I have difficulty understanding abstract ideas.<input  class='slider' type="range" name=name_of_slider[17] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='opn3'>19. I have a vivid imagination.<input  class='slider' type="range" name=name_of_slider[18] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+      <div class='heading' name='opn4'>20. I am not interested in abstract ideas.<input  class='slider' type="range" name=name_of_slider[19] min="0" max="5" step="0.5" value="0" oninput="this.form.name_of_slider.value=this.value" /></div>
+
+
+      
+      <a target="_self" href="/test" ></a>
+      <input type="submit" value="Submit" class="submit"/>
+    </form>
+
+    
+    
+
+
+  <!--  Scripts-->
+ 
+  </body>
+</html>

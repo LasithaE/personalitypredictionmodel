@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/output.css') }}">
+</head>
+<body method="POST" class='output' action="{{ url_for('test') }}"> 
+  <h1>{{type}}</h1>
+  <h1>Your dominating trait is: {{dominate}}</h1>
+  <h1>Your weaker trait is: {{weaker}}</h1>
+</body>
+</html>

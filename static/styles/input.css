@@ -1,0 +1,37 @@
+body{
+    background-color: #181818;
+    margin: 5vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 1.5vh;
+}
+.desc{
+    font-weight: 300;
+    padding-bottom: 2.5vh;
+    align-items:center;
+}
+.heading{
+    font-size: 1.4vw;
+    height:5vh;
+    width:auto;
+    margin:20px;
+    
+}
+.slider{
+    float:right;
+    margin-right: 9vw;
+    width: 12vw;
+    color:blueviolet;
+}
+.submit{
+    font: inherit;
+    width:10vw ;
+    background-color:#ffffff;
+    border-radius: 20px;
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
