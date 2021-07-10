@@ -132,6 +132,5 @@ def test():
 
     print(type_list)
     return render_template('output.html',type_list=type_list,type=type,dominate=dominate,weaker=weaker)
-
- 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
